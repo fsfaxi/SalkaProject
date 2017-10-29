@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  pm.api:
+    image: pm.api
+    build:
+      context: ./PM.Api
+      dockerfile: Dockerfile
+
+  crm.api:
+    image: crm.api
+    build:
+      context: ./CRM.Api
+      dockerfile: Dockerfile
